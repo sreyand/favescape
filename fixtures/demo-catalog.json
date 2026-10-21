@@ -1,0 +1,25 @@
+{
+  "provenance": "Original fictional demo catalog for Favescape. Names, ratings, and genre associations are illustrative. Audio is procedurally synthesized by scripts/generate_demo.py; no commercial recordings are included.",
+  "moods": [
+    { "id": "euphoric", "label": "Euphoric", "color": "#E94B35", "x": 0.73, "y": 0.2 },
+    { "id": "melancholy", "label": "Melancholy", "color": "#295BCC", "x": 0.23, "y": 0.73 },
+    { "id": "restless", "label": "Restless", "color": "#F1B943", "x": 0.28, "y": 0.23 },
+    { "id": "calm", "label": "Calm", "color": "#4C8A74", "x": 0.76, "y": 0.73 },
+    { "id": "angry", "label": "Angry", "color": "#B95743", "x": 0.14, "y": 0.47 },
+    { "id": "dreamy", "label": "Dreamy", "color": "#8173AA", "x": 0.53, "y": 0.53 }
+  ],
+  "tracks": [
+    { "id": "demo-sugar-rush", "title": "Sugar Rush", "artist": "Candy Circuit", "album": "Digital Daydreams", "genres": ["Hyperpop", "EDM"], "duration": 48, "artwork": "/artwork/sugar-rush.svg", "color": "#E94B35", "enjoyment": 5, "moodRatings": { "euphoric": 5, "restless": 4 }, "moodNotes": { "euphoric": "Tiny synths, big feelings. Illustrative demo rating." } },
+    { "id": "demo-afterglow", "title": "Afterglow", "artist": "Soft Signal", "album": "Open Windows", "genres": ["House", "EDM"], "duration": 48, "artwork": "/artwork/afterglow.svg", "color": "#295BCC", "enjoyment": 5, "moodRatings": { "dreamy": 5, "calm": 4, "euphoric": 3 }, "moodNotes": { "dreamy": "Like the last warm hour of the day. Illustrative demo rating." } },
+    { "id": "demo-orbit", "title": "Orbit", "artist": "Glass Arcade", "album": "Satellite Club", "genres": ["EDM"], "duration": 48, "artwork": "/artwork/orbit.svg", "color": "#F1B943", "enjoyment": 4, "moodRatings": { "euphoric": 4, "dreamy": 3 }, "moodNotes": {} },
+    { "id": "demo-blue-hour", "title": "Blue Hour", "artist": "Satellite Motel", "album": "Rooms With a View", "genres": ["House"], "duration": 56, "artwork": "/artwork/blue-hour.svg", "color": "#295BCC", "enjoyment": 5, "moodRatings": { "melancholy": 5, "dreamy": 4 }, "moodNotes": { "melancholy": "A soft beat for the way home. Illustrative demo rating." } },
+    { "id": "demo-static-kiss", "title": "Static Kiss", "artist": "Candy Circuit", "album": "Digital Daydreams", "genres": ["Hyperpop"], "duration": 40, "artwork": "/artwork/static-kiss.svg", "color": "#E94B35", "enjoyment": 4, "moodRatings": { "restless": 5, "angry": 3, "euphoric": 4 }, "moodNotes": {} },
+    { "id": "demo-sideways", "title": "Sideways", "artist": "Low Season", "album": "Sunday Service", "genres": ["House"], "duration": 56, "artwork": "/artwork/sideways.svg", "color": "#4C8A74", "enjoyment": 4, "moodRatings": { "calm": 5, "dreamy": 4 }, "moodNotes": {} },
+    { "id": "demo-neon-heart", "title": "Neon Heart", "artist": "Pixel Cinema", "album": "Soft Reset", "genres": ["Hyperpop", "EDM"], "duration": 48, "artwork": "/artwork/neon-heart.svg", "color": "#E94B35", "enjoyment": 5, "moodRatings": { "euphoric": 5, "melancholy": 3 }, "moodNotes": { "euphoric": "Happy on the surface, a little wistful underneath. Illustrative demo rating." } },
+    { "id": "demo-night-swim", "title": "Night Swim", "artist": "Soft Signal", "album": "Open Windows", "genres": ["House"], "duration": 64, "artwork": "/artwork/night-swim.svg", "color": "#4C8A74", "enjoyment": 5, "moodRatings": { "dreamy": 5, "calm": 5 }, "moodNotes": {} },
+    { "id": "demo-soft-focus", "title": "Soft Focus", "artist": "Satellite Motel", "album": "Rooms With a View", "genres": ["EDM"], "duration": 56, "artwork": "/artwork/soft-focus.svg", "color": "#8173AA", "enjoyment": 4, "moodRatings": { "melancholy": 4, "calm": 4, "dreamy": 5 }, "moodNotes": {} },
+    { "id": "demo-overdrive", "title": "Overdrive", "artist": "Glass Arcade", "album": "Satellite Club", "genres": ["EDM", "Hyperpop"], "duration": 40, "artwork": "/artwork/overdrive.svg", "color": "#B95743", "enjoyment": 4, "moodRatings": { "restless": 5, "angry": 4 }, "moodNotes": {} },
+    { "id": "demo-moonmilk", "title": "Moonmilk", "artist": "Low Season", "album": "Sunday Service", "genres": ["House"], "duration": 64, "artwork": "/artwork/moonmilk.svg", "color": "#4C8A74", "enjoyment": 4, "moodRatings": { "calm": 5, "dreamy": 4 }, "moodNotes": {} },
+    { "id": "demo-paper-stars", "title": "Paper Stars", "artist": "Pixel Cinema", "album": "Soft Reset", "genres": ["Hyperpop"], "duration": 48, "artwork": "/artwork/paper-stars.svg", "color": "#F1B943", "enjoyment": 5, "moodRatings": { "dreamy": 4, "euphoric": 4 }, "moodNotes": {} }
+  ]
+}

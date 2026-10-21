@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Original Sideways demo sleeve: sage blocks and cream semicircles">
+<rect width="400" height="400" fill="#4C8A74"/><path d="M0 0h200v200H0zm200 200h200v200H200z" fill="#F6F0DC"/>
+<path d="M0 0a100 100 0 0 1 0 200Zm200 0a100 100 0 0 1 0 200ZM200 200a100 100 0 0 1 0 200Zm200 0a100 100 0 0 1 0 200Z" fill="#1755C5"/>
+<path d="M200 0v200a100 100 0 0 0 0-200ZM0 200v200a100 100 0 0 0 0-200Z" fill="#F1B943"/>
+<circle cx="200" cy="200" r="39" fill="#E94B35"/><path d="m200 173 7 20 20 7-20 7-7 20-7-20-20-7 20-7Z" fill="#F6F0DC"/>
+</svg>

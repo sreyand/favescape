@@ -1,0 +1,52 @@
+.minimal-tasteplay { width: 100%; min-width: 0; padding: 8px 0 28px; }
+.minimal-tasteplay .mtp-builder { padding: 0 0 30px; border-bottom: 1px solid var(--line, #d4d0c3); }
+.minimal-tasteplay .mtp-builder h2 { margin: 0 0 20px; color: var(--ink, #142b40); font-family: var(--font-display, "Fraunces", Georgia, serif); font-size: clamp(26px, 3vw, 35px); font-style: italic; line-height: 1.15; }
+.minimal-tasteplay .mtp-form { display: flex; align-items: end; gap: 14px; max-width: 720px; }
+.minimal-tasteplay .mtp-form label { display: grid; flex: 1; gap: 8px; min-width: 0; font-size: 12px; font-weight: 600; }
+.minimal-tasteplay .mtp-form select { width: 100%; min-height: 44px; padding: 9px 32px 9px 12px; border: 1px solid var(--line, #b7b8ad); border-radius: 6px; background-color: transparent; color: inherit; font: inherit; font-size: 14px; font-weight: 400; }
+.minimal-tasteplay .mtp-generate { min-height: 44px; white-space: nowrap; }
+.minimal-tasteplay .mtp-note, .minimal-tasteplay .mtp-empty { margin: 14px 0 0; max-width: 680px; color: var(--muted, #69726f); font-size: 12px; line-height: 1.65; }
+.minimal-tasteplay .mtp-error { color: #b3392f; }
+.minimal-tasteplay .mtp-playlist { padding-top: 26px; }
+.minimal-tasteplay .mtp-playlist-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.minimal-tasteplay .mtp-playlist-heading h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+.minimal-tasteplay .mtp-playlist-heading p { margin: 0; color: var(--muted, #69726f); font-size: 12px; }
+.minimal-tasteplay .mtp-playlist-actions { display: flex; align-items: center; gap: 16px; }
+.minimal-tasteplay .mtp-text-button { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 4px 0; border: 0; background: transparent; color: var(--blue, #164dbb); font-size: 12px; font-weight: 600; }
+.minimal-tasteplay .mtp-tracks { margin: 24px 0 0; padding: 0; list-style: none; }
+.minimal-tasteplay .mtp-tracks > li { display: grid; grid-template-columns: 22px minmax(0, 1fr) 45px 36px; align-items: center; gap: 12px; min-height: 72px; padding: 10px 0; border-bottom: 1px solid var(--line, #d4d0c3); }
+.minimal-tasteplay .mtp-track-number, .minimal-tasteplay .mtp-track-duration { color: var(--muted, #69726f); font-size: 12px; font-variant-numeric: tabular-nums; }
+.minimal-tasteplay .mtp-track-duration { text-align: right; }
+.minimal-tasteplay .mtp-track-name { display: grid; gap: 5px; min-width: 0; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; }
+.minimal-tasteplay .mtp-track-name strong, .minimal-tasteplay .mtp-track-name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.minimal-tasteplay .mtp-track-name strong { font-size: 13px; font-weight: 600; }
+.minimal-tasteplay .mtp-track-name span { color: var(--muted, #69726f); font-size: 12px; }
+.minimal-tasteplay .mtp-current .mtp-track-name strong { color: var(--blue, #164dbb); }
+.minimal-tasteplay .mtp-track-options { position: relative; }
+.minimal-tasteplay .mtp-track-options > summary { display: flex; align-items: center; justify-content: center; width: 36px; height: 40px; border-radius: 5px; cursor: pointer; list-style: none; }
+.minimal-tasteplay summary::-webkit-details-marker { display: none; }
+.minimal-tasteplay .mtp-track-options > summary:hover, .minimal-tasteplay .mtp-track-options[open] > summary { background: #e8e7dc; }
+.minimal-tasteplay .mtp-options-content { position: absolute; top: 44px; right: 0; z-index: 20; width: min(310px, calc(100vw - 52px)); padding: 16px; border: 1px solid var(--line, #b7b8ad); border-radius: 6px; background: var(--cream, #fff9ec); }
+.minimal-tasteplay .mtp-options-content > p { margin: 0 0 13px; color: var(--muted, #69726f); font-size: 12px; line-height: 1.6; }
+.minimal-tasteplay .mtp-feedback, .minimal-tasteplay .mtp-edit-actions { display: flex; flex-wrap: wrap; gap: 5px; }
+.minimal-tasteplay .mtp-edit-actions { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line, #d4d0c3); }
+.minimal-tasteplay .mtp-options-content button { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 6px 8px; border: 0; border-radius: 4px; background: transparent; color: inherit; font-size: 11px; }
+.minimal-tasteplay .mtp-options-content button:hover, .minimal-tasteplay .mtp-options-content button.is-active { background: #e8edf6; color: var(--blue, #164dbb); }
+.minimal-tasteplay .mtp-options-content button:disabled { opacity: 0.35; }
+.minimal-tasteplay .mtp-history { margin-top: 28px; border-top: 1px solid var(--line, #d4d0c3); }
+.minimal-tasteplay .mtp-history > summary { display: flex; align-items: center; gap: 10px; min-height: 52px; cursor: pointer; list-style: none; font-size: 12px; font-weight: 600; }
+.minimal-tasteplay .mtp-history > summary > svg { margin-left: auto; }
+.minimal-tasteplay .mtp-history[open] > summary > svg { transform: rotate(180deg); }
+.minimal-tasteplay .mtp-history-count { color: var(--muted, #69726f); font-size: 11px; font-weight: 400; }
+.minimal-tasteplay .mtp-history-list { max-height: 280px; overflow-y: auto; }
+.minimal-tasteplay .mtp-history-list button { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 46px; padding: 7px 0; border: 0; border-top: 1px solid var(--line, #d4d0c3); background: transparent; color: inherit; font-size: 12px; text-align: left; }
+.minimal-tasteplay .mtp-history-list small { color: var(--muted, #69726f); font-size: 11px; }
+.minimal-tasteplay button:focus-visible, .minimal-tasteplay summary:focus-visible, .minimal-tasteplay select:focus-visible { outline: 2px solid var(--blue, #164dbb); outline-offset: 3px; }
+@media (max-width: 640px) {
+  .minimal-tasteplay .mtp-form { flex-wrap: wrap; }
+  .minimal-tasteplay .mtp-form label { flex-basis: calc(50% - 7px); }
+  .minimal-tasteplay .mtp-generate { width: 100%; justify-content: center; }
+  .minimal-tasteplay .mtp-playlist-heading { align-items: start; flex-direction: column; }
+  .minimal-tasteplay .mtp-playlist-actions { width: 100%; }
+  .minimal-tasteplay .mtp-tracks > li { grid-template-columns: 16px minmax(0, 1fr) 36px 36px; gap: 8px; }
+}

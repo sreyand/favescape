@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Original Afterglow demo sleeve: blue arches around a warm red sun">
+<rect width="400" height="400" fill="#F6F0DC"/><path d="M0 0h400v200H0z" fill="#1755C5"/><circle cx="200" cy="200" r="126" fill="#E94B35"/>
+<path d="M0 200h400v200H0z" fill="#F6F0DC"/><path d="M0 220h400v18H0zm0 38h400v18H0zm0 38h400v18H0zm0 38h400v18H0zm0 38h400v18H0z" fill="#1755C5"/>
+<path d="M35 200V90a55 55 0 0 1 110 0v110M255 200V90a55 55 0 0 1 110 0v110" fill="none" stroke="#F6F0DC" stroke-width="19"/>
+<path d="m200 35 8 25 25 8-25 8-8 25-8-25-25-8 25-8Z" fill="#F1B943"/><circle cx="200" cy="200" r="13" fill="#F1B943"/>
+</svg>

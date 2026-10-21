@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Original Blue Hour demo sleeve: a cream moon and blue window grid">
+<rect width="400" height="400" fill="#F6F0DC"/><path d="M36 400V177a164 164 0 0 1 328 0v223Z" fill="#1755C5"/><path d="M67 400V177a133 133 0 0 1 266 0v223" fill="none" stroke="#F6F0DC" stroke-width="3"/>
+<circle cx="200" cy="170" r="77" fill="#F1B943"/><circle cx="228" cy="145" r="75" fill="#1755C5"/><path d="M36 285h328M200 14v386" stroke="#F6F0DC" stroke-width="12"/>
+<path d="M36 326h328v11H36zm0 28h328v8H36zm0 23h328v5H36z" fill="#F6F0DC"/><path d="m302 55 8 24 24 8-24 8-8 24-8-24-24-8 24-8Z" fill="#E94B35"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Original Soft Focus demo sleeve: concentric lavender and cream curves">
+<rect width="400" height="400" fill="#F6F0DC"/><circle cx="200" cy="200" r="181" fill="#8173AA"/><circle cx="200" cy="200" r="150" fill="#F6F0DC"/><circle cx="200" cy="200" r="119" fill="#1755C5"/><circle cx="200" cy="200" r="88" fill="#F6F0DC"/><circle cx="200" cy="200" r="57" fill="#E94B35"/>
+<path d="M0 200h400v200H0Z" fill="#F6F0DC"/><path d="M19 200v181h31V200zm62 0v181h31V200zm62 0v181h31V200zm62 0v181h31V200zm62 0v181h31V200zm62 0v181h31V200z" fill="#8173AA"/>
+<path d="m200 157 11 32 32 11-32 11-11 32-11-32-32-11 32-11Z" fill="#F1B943"/>
+</svg>

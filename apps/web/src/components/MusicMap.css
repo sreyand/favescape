@@ -1,0 +1,358 @@
+.music-map {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #16304745;
+  border-radius: 12px;
+  background: var(--cream, #fff8e8);
+  color: var(--ink, #163047);
+  isolation: isolate;
+}
+
+.music-map-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000 / 650;
+  min-height: 350px;
+  max-height: 650px;
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+}
+
+.music-map--dragging .music-map-canvas,
+.music-map--dragging .music-map-node {
+  cursor: grabbing;
+}
+.music-map-grid {
+  pointer-events: none;
+}
+.music-map-neighborhood {
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.music-map-region-label {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 43px;
+  letter-spacing: -1.6px;
+  opacity: 0.88;
+  paint-order: stroke;
+  stroke: var(--cream, #fff8e8);
+  stroke-width: 1px;
+}
+
+.music-map-region-label--sound {
+  font-size: 33px;
+}
+
+.music-map-connection {
+  fill: none;
+  stroke: #254236;
+  stroke-opacity: 0.25;
+  stroke-width: 1.05px;
+  pointer-events: stroke;
+}
+
+.music-map-connection--generated {
+  stroke-dasharray: 3 4;
+  stroke-opacity: 0.15;
+}
+.music-map-connection--personal {
+  stroke-opacity: 0.4;
+  stroke-width: 1.35px;
+}
+.music-map-session-path {
+  color: var(--blue, #1453c8);
+  stroke: var(--blue, #1453c8);
+  stroke-width: 2.6px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-opacity: 0.75;
+  pointer-events: none;
+}
+
+.music-map-node {
+  outline: none;
+  cursor: grab;
+  transition: opacity 160ms ease;
+}
+
+.music-map--metrics .music-map-node {
+  cursor: pointer;
+}
+.music-map-node-hit {
+  fill: transparent;
+  stroke: none;
+}
+.music-map-node-disc {
+  fill: var(--node-color);
+  stroke: var(--cream, #fff8e8);
+  stroke-width: 1.5px;
+}
+.music-map-node-center {
+  fill: var(--cream, #fff8e8);
+  opacity: 0.9;
+  pointer-events: none;
+}
+.music-map-node-halo {
+  fill: var(--cream, #fff8e8);
+  fill-opacity: 0.65;
+  stroke: var(--node-color);
+  stroke-width: 1.6px;
+}
+.music-map-node--current .music-map-node-halo {
+  stroke-dasharray: 3 3;
+}
+.music-map-node:focus-visible .music-map-node-hit {
+  fill: none;
+  stroke: var(--ink, #163047);
+  stroke-width: 1.5px;
+  stroke-dasharray: 3 3;
+}
+.music-map-node:hover .music-map-node-disc {
+  stroke-width: 2.8px;
+}
+.music-map-node-label {
+  pointer-events: none;
+}
+.music-map-node-label rect {
+  fill: var(--cream, #fff8e8);
+  stroke: #b8b49f;
+  stroke-width: 0.65px;
+}
+.music-map-node-label--quiet rect {
+  fill: none;
+  stroke: none;
+}
+.music-map-node-label--quiet .music-map-track-artist {
+  display: none;
+}
+.music-map-node-label--quiet .music-map-track-title {
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.music-map-node--selected .music-map-node-label rect {
+  stroke: var(--node-color);
+  stroke-width: 1px;
+  filter: drop-shadow(2px 2px 0 #102c3a12);
+}
+.music-map-node-label text {
+  fill: var(--ink, #163047);
+  font-family: inherit;
+}
+.music-map-track-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.music-map-track-artist {
+  font-size: 10.5px;
+  font-weight: 400;
+}
+.music-map-path-step {
+  pointer-events: none;
+}
+.music-map-path-step circle {
+  fill: var(--blue, #1453c8);
+  stroke: var(--cream, #fff8e8);
+  stroke-width: 1.2px;
+}
+.music-map-path-step text {
+  fill: #fff8e8;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.music-map-axes {
+  pointer-events: none;
+}
+.music-map-axes line {
+  stroke: #5c675e;
+  stroke-width: 0.8px;
+}
+.music-map-axes text {
+  font-family: inherit;
+  font-size: 10px;
+  fill: #566356;
+}
+.music-map-axes .music-map-axis-label {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 10px;
+  fill: var(--ink, #163047);
+}
+.music-map-empty {
+  pointer-events: none;
+}
+.music-map-empty > text {
+  fill: var(--ink, #163047);
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 37px;
+  font-style: italic;
+}
+.music-map-empty .music-map-empty-detail {
+  font-family: inherit;
+  font-size: 13px;
+  font-style: normal;
+  fill: #526052;
+}
+
+.music-map-navigation {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.music-map-tools {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #16304740;
+  border-radius: 5px;
+  background: var(--cream, #fff8e8);
+}
+
+.music-map-tools button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink, #163047);
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.music-map-tools button + button {
+  border-left: 1px solid #16304725;
+}
+.music-map-tools button:hover {
+  background: #e4e9cc;
+}
+.music-map-tools button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.music-map-tools button:focus-visible {
+  outline: 2px solid var(--blue, #1453c8);
+  outline-offset: -3px;
+}
+.music-map-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 29px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: var(--cream, #fff8e8);
+  color: #657065;
+  cursor: pointer;
+}
+.music-map-reset:hover {
+  color: var(--blue, #1453c8);
+}
+.music-map-reset:focus-visible {
+  outline: 2px solid var(--blue, #1453c8);
+  outline-offset: 2px;
+}
+.music-map-unplaced {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 18px;
+  border-top: 1px solid #17324420;
+  background: #e6e5d130;
+}
+.music-map-unplaced-label {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.music-map-unplaced-label > span {
+  margin-left: 4px;
+  color: #667164;
+}
+.music-map-unplaced-tracks {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.music-map-unplaced-tracks button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 5px 8px;
+  border: 1px solid #17324435;
+  border-radius: 4px;
+  background: var(--cream, #fff8e8);
+  color: var(--ink, #163047);
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+.music-map-unplaced-tracks button > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.music-map-unplaced-tracks button:hover {
+  border-color: var(--blue, #1453c8);
+}
+.music-map-unplaced-tracks button:focus-visible {
+  outline: 2px solid var(--blue, #1453c8);
+  outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+  .music-map {
+    border-radius: 9px;
+  }
+  .music-map-canvas {
+    min-height: 330px;
+    aspect-ratio: 1.2;
+  }
+  .music-map-navigation {
+    right: 12px;
+    top: 12px;
+  }
+  .music-map-tools button {
+    width: 28px;
+    height: 28px;
+  }
+  .music-map-unplaced {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    padding: 12px 14px;
+  }
+  .music-map-unplaced-tracks {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-map * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

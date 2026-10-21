@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Original Orbit demo sleeve: golden planetary circles on cobalt">
+<rect width="400" height="400" fill="#1755C5"/><circle cx="200" cy="200" r="154" fill="none" stroke="#F6F0DC" stroke-width="2"/><circle cx="200" cy="200" r="108" fill="none" stroke="#F6F0DC" stroke-width="2"/>
+<ellipse cx="200" cy="200" rx="177" ry="53" transform="rotate(-35 200 200)" fill="none" stroke="#F6F0DC" stroke-width="11"/><circle cx="200" cy="200" r="79" fill="#F1B943"/><path d="M200 121a79 79 0 0 1 0 158Z" fill="#E94B35"/>
+<circle cx="91" cy="91" r="25" fill="#E94B35"/><circle cx="315" cy="303" r="17" fill="#F1B943"/><path d="m324 48 9 27 27 9-27 9-9 27-9-27-27-9 27-9ZM62 280l7 22 22 7-22 7-7 22-7-22-22-7 22-7Z" fill="#F6F0DC"/>
+</svg>

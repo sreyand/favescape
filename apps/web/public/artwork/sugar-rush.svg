@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Original Sugar Rush demo sleeve: cobalt, cream and tomato geometric shapes">
+<rect width="400" height="400" fill="#F6F0DC"/><path d="M0 0h200v200H0zM200 200h200v200H200z" fill="#1755C5"/>
+<path d="M200 0a100 100 0 0 1 0 200h-100V100A100 100 0 0 1 200 0Z" fill="#E94B35"/><path d="M0 200a100 100 0 0 1 200 0v100a100 100 0 0 1-100 100H0Z" fill="#E94B35"/>
+<circle cx="200" cy="200" r="79" fill="#F6F0DC"/><circle cx="200" cy="200" r="47" fill="#1755C5"/><circle cx="200" cy="200" r="12" fill="#F6F0DC"/>
+<path d="m310 39 12 39 39 12-39 12-12 39-12-39-39-12 39-12Z" fill="#F1B943"/><path d="m88 266 10 30 30 10-30 10-10 30-10-30-30-10 30-10Z" fill="#F6F0DC"/>
+<path d="M262 285h24v24h-24zm24 24h24v24h-24zm24-24h24v24h-24zm24 24h24v24h-24z" fill="#F6F0DC"/>
+</svg>
